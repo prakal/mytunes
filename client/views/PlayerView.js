@@ -14,6 +14,10 @@ var PlayerView = Backbone.View.extend({
   },
 
   render: function(){
+    // if this.model exists,
+          //then return (this.$el.attr('src',this.model.get('url')).
+    //else,
+          //return (this.$el.attr('src','')
     return this.$el.attr('src', this.model ? this.model.get('url') : '');
   }
 
