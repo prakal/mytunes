@@ -48,15 +48,15 @@ describe('PlayerView', function() {
       // console.log('what we have',appView.playerView.model);
       // Simulate the end of the first song
       $(appView.playerView.el).trigger('ended');
-      console.log('trieggger');
+      // console.log('triggered');
       expect(appView.playerView.model).to.equal(secondSong);
-      console.log('expected',secondSong);
-      console.log('what we have',appView.playerView.el);
-      // Simulate the end of the second song
+      // console.log('expected',secondSong);
+      // console.log('what we have',appView.playerView.model);
+      // console.log("What is this?",$(appView.playerView.el))
       $(appView.playerView.el).trigger('ended');
       expect(appView.playerView.model).to.equal(thirdSong);
-      console.log('expected',thirdSong);
-      console.log('what we have',appView.playerView.el);
+      // console.log('expectedthird',thirdSong);
+      // console.log('what we havethird',appView.playerView.model);
     });
   });
 
