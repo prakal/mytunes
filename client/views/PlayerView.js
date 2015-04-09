@@ -17,6 +17,8 @@ var PlayerView = Backbone.View.extend({
   events: {
     'ended': function() {
       console.log('fsdfs');
+      var songQ = this.get('songQueue');
+      this.playerView.setSong(songQ.at(0));
     }
   },
 
